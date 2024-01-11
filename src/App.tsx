@@ -11,9 +11,25 @@ function App() {
   }, []);
   return (
     <>
+    <div
+        style={{
+          backgroundImage: "url(/pattern.png)"
+        }}
+      >
     <Header/>
-      
+      <div>
+        Sort countries by:
+        <div className="sortButtons">
+          <button className="sortBtn"
+          >Population
+          </button>
+          <button className="sortBtn"
+          >Name
+          </button>
+        </div>
+      </div>
       <ElementList countries={api.states.data}></ElementList>
+      </div>
     </>
   );
 }

@@ -10,7 +10,14 @@ export default function ElementList(props: ListProps) {
     <div className="card-container">
       {props.countries.map((country) => (
         <div key={country.flag}>
-        <ElementCard name={country.name.common} flag={country.flag} population={country.population} capital={country.capital} 
+        <ElementCard 
+        name={country.name.common} 
+        flag={country.flag} 
+        population={country.population}
+        subregion={country.subregion}
+        languages={country.languages}
+        timeZones={country.timezones}
+        capital={country.capital} 
        />
        </div>
       ))}

@@ -40,14 +40,29 @@
 .read-the-docs {
   color: #888;
 }
-
 .card-container{
   display: flex;
+  flex-direction: row;
   gap: 8px;
-  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .buttons{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+}
+
+.timezones{
+  display: flex;
+}
+
+.sortBtn{
+  background-color: #1976d2
+}
+
+.sortButtons{
+  display: flex;
+  gap: 8px;
 }
