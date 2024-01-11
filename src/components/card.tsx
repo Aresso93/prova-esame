@@ -2,7 +2,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { CoatOfArms, Currencies, Languages } from "../model/country";
 
@@ -35,14 +34,7 @@ export default function ElementCard(props: CardProps) {
          {props.name}'s capital is {props.capital} and the country is part of the {props.subregion} area.
          {props.landlocked ? "The country is landlocked." : "The country has access to the sea."}
         </Typography>
-        <div>
-        {/* <h5>Time Zones</h5>
-        {props.timeZones.map((timeZone) => (
-          <div className="timezones">
-            <div>{timeZone}</div>
-          </div>
-        ))} */}
-        </div>
+        
       </CardContent>
       <CardActions>
         <div className="buttons">

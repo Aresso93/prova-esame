@@ -26,6 +26,9 @@ function App() {
           <button className="sortBtn"
           >Name
           </button>
+          <button className="sortBtn"
+          >Sub Region
+          </button>
         </div>
       </div>
       <ElementList countries={api.states.data}></ElementList>

@@ -49,15 +49,6 @@
   flex-wrap: wrap;
 }
 
-.buttons{
-  display: flex;
-  flex-direction: row;
-}
-
-.timezones{
-  display: flex;
-}
-
 .sortBtn{
   background-color: #1976d2
 }
