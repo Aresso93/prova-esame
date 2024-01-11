@@ -6,7 +6,7 @@ export function useApi() {
   const [data, setData] = useState([]);
 
   async function getData() {
-    const dataResp = await axios("");
+    const dataResp = await axios("/europe");
     console.log("AAAAA", dataResp.data);
     setData(dataResp.data);
   }
