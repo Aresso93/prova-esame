@@ -10,7 +10,7 @@ interface CardProps {
   name: string;
   flag: string;
   population: number;
-  capital: string;
+  capital: string[];
   currencies: Currencies;
   languages: Languages;
   subregion: string;
@@ -32,6 +32,7 @@ export default function ElementCard(props: CardProps) {
         <Typography variant="body2" color="text.secondary">
          <b>{props.name}</b> is a European country with a population of {props.population} citizens.<br></br>
          {props.name}'s capital is {props.capital} and the country is part of the {props.subregion} area.
+         {props.landlocked ? "The country is landlocked." : "The country has access to the sea."}
         </Typography>
         <div>
         {/* <h5>Time Zones</h5>
