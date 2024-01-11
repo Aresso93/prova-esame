@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Currencies, Languages } from "../model/country";
+import { CoatOfArms, Currencies, Languages } from "../model/country";
 
 interface CardProps {
   name: string;
@@ -15,7 +15,8 @@ interface CardProps {
   languages: Languages;
   subregion: string;
   landlocked: boolean;
-  timeZones: string[]
+  timeZones: string[];
+  coatOfArms: CoatOfArms
 }
 
 export default function ElementCard(props: CardProps) {
@@ -23,8 +24,8 @@ export default function ElementCard(props: CardProps) {
   const countryUrl = "https://en.wikipedia.org/wiki/" + props.name
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      {/* <CardMedia sx={{ height: 140 }} image={props.img} title={props.name} /> */}
+    <Card sx={{ maxWidth: 404 }}>
+      <CardMedia sx={{ height: 460 }} image={props.coatOfArms.png} title={props.name} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {props.name} {props.flag}

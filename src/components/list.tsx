@@ -13,6 +13,7 @@ export default function ElementList(props: ListProps) {
         <ElementCard 
             name={country.name.common}
             flag={country.flag}
+            coatOfArms={country.coatOfArms}
             population={country.population}
             subregion={country.subregion}
             languages={country.languages}
